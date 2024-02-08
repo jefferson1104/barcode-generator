@@ -1,4 +1,4 @@
-### NOTES
+## NOTES
 
 #### virtualenv
 
@@ -23,4 +23,39 @@ https://pypi.org/project/pylint/
 $ pip3 install pylint
 
 $ pylint --generate-rcfile > .pylintrc
+```
+
+#### pre-commit
+
+A framework for managing and maintaining multi-language pre-commit hooks.
+https://pre-commit.com/
+
+```bash
+$ pip3 install pre-commit
+```
+
+create `.pre-commit-config.yaml` with this content below:
+
+```bash
+repos:
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+          [
+            "-rn", # Only display messages
+            "-sn", # Don't display the source
+            "--rcfile=.pylintrc", # Link to your config file
+            "--load-plugins=pylint.extensions.docparams", # Load an extension
+          ]
+```
+
+run this commmand below
+
+```bash
+$ pre-commit install
 ```
