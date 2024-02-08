@@ -12,6 +12,8 @@ $ pip3 install virtualenv
 $ python3 -m venv .venv
 
 $ source .venv/bin/activate
+
+$ .venv/bin/pip3 freeze > requirements.txt
 ```
 
 #### pylint
