@@ -13,6 +13,7 @@ $ python3 -m venv .venv
 
 $ source .venv/bin/activate
 
+# every time you install some dependency in your project you need to run this command to update the requirements.txt
 $ .venv/bin/pip3 freeze > requirements.txt
 ```
 
@@ -60,4 +61,28 @@ run this commmand below
 
 ```bash
 $ pre-commit install
+```
+
+#### Flask
+
+Flask is a lightweight WSGI web application framework.
+https://pypi.org/project/Flask/
+
+```bash
+$ pip3 install flask
+```
+
+#### Python-barcode & pillow
+
+python-barcode provides a simple way to create barcodes in Python.
+https://pypi.org/project/python-barcode/
+
+The Python Imaging Library adds image processing capabilities to your Python interpreter.
+This library provides extensive file format support.
+https://pypi.org/project/pillow/
+
+```bash
+$ pip3 install python-barcode
+
+$ pip3 install pillow
 ```
