@@ -86,3 +86,23 @@ $ pip3 install python-barcode
 
 $ pip3 install pillow
 ```
+
+### Endpoint
+
+```bash
+# endpoint
+http://localhost:3000/create_tag
+
+# json body
+{
+    "product_code": "HelloWorld"
+}
+```
+
+### Run project
+
+```bash
+$ python3 [file_name]
+# python3 run.py
+
+```
