@@ -87,6 +87,16 @@ $ pip3 install python-barcode
 $ pip3 install pillow
 ```
 
+### Cerberus
+
+Cerberus provides powerful yet simple and lightweight data validation functionality
+https://docs.python-cerberus.org/
+https://pypi.org/project/Cerberus/
+
+```bash
+$ pip3 install Cerberus
+```
+
 ### Endpoint
 
 ```bash
