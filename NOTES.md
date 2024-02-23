@@ -94,7 +94,24 @@ https://docs.python-cerberus.org/
 https://pypi.org/project/Cerberus/
 
 ```bash
+$ pip3 install pytest
+
+# test
+$ pytest
+
+# test details
+$ pytest -s -v
+```
+
+### Pytest
+
+The pytest framework makes it easy to write small, readable tests, and can scale to support complex functional testing for applications and libraries.
+https://docs.pytest.org/en/8.0.x/getting-started.html
+https://pypi.org/project/pytest/
+
+```bash
 $ pip3 install Cerberus
+
 ```
 
 ### Endpoint
