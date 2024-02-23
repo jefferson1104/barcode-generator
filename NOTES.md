@@ -15,12 +15,16 @@ $ source .venv/bin/activate
 
 # every time you install some dependency in your project you need to run this command to update the requirements.txt
 $ .venv/bin/pip3 freeze > requirements.txt
+
+# to exit
+$ deactivate
 ```
 
 #### pylint
 
 Pylint is a static code analyser for Python 2 or 3
 https://pypi.org/project/pylint/
+https://pylint.readthedocs.io/en/stable/
 
 ```bash
 $ pip3 install pylint
@@ -31,6 +35,7 @@ $ pylint --generate-rcfile > .pylintrc
 #### pre-commit
 
 A framework for managing and maintaining multi-language pre-commit hooks.
+https://pre-commit.com/
 https://pre-commit.com/
 
 ```bash
@@ -67,6 +72,7 @@ $ pre-commit install
 
 Flask is a lightweight WSGI web application framework.
 https://pypi.org/project/Flask/
+https://flask.palletsprojects.com/en/3.0.x/
 
 ```bash
 $ pip3 install flask
@@ -76,10 +82,12 @@ $ pip3 install flask
 
 python-barcode provides a simple way to create barcodes in Python.
 https://pypi.org/project/python-barcode/
+https://python-barcode.readthedocs.io/en/stable/
 
 The Python Imaging Library adds image processing capabilities to your Python interpreter.
 This library provides extensive file format support.
 https://pypi.org/project/pillow/
+https://python-pillow.org/
 
 ```bash
 $ pip3 install python-barcode
